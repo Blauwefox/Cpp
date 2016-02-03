@@ -1,0 +1,13 @@
+//my first C script. And because I started learning German at the same time ...
+//27JAN2016
+//it says "This is my first C++ program. (newline)Everything is Good. (newline)I am awesome"
+
+#include <iostream>
+using namespace std;
+int main ()
+	{cout<<"Diese ist meine eerste C++ programier \n";
+	printf("Alles ist gut");
+	cout<<"Ich bin toll";
+	return 0;
+	getchar();
+	}
