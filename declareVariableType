@@ -1,0 +1,35 @@
+/* Originally scripted on 31JAN2016 */
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+
+extern int a, b; // prototype var
+extern int c;
+extern float f;
+
+int main()
+{
+	int a, b; //initialise var
+	int c;
+	float f;
+	
+	a = 10; //values into var
+	b = 20;
+	c = a*b + (1/2)*b*b; // compute
+//	return c;
+
+	printf("value of C is : ");
+	cout << c <<endl;
+	
+	f = pow(c,5);
+//	return f;
+	
+	printf("f = c ^ (1.75) is : %c", f);
+
+	cout << f <<endl;
+	
+	return 0;
+}
