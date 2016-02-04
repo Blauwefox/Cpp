@@ -1,0 +1,34 @@
+/* Originally scripted on 31JAN2016 to give final velocity and range of a projectile, if time t is given
+while other terms a, u, are defined */
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+#define Gravity 9.8
+#define Initspeed 0.2
+
+float v, u, a, t, s;
+
+void vuat( float v, float a, float u, float t, float s)
+{
+	u = Initspeed;
+	a = Gravity;
+	
+	printf("enter time of flight\n");
+	scanf("%f", &t);
+	
+	v = u + a*t;
+	printf("The final velocity v is: %f\n", v, "m/s");
+		
+	s = u*t + (1/2)*pow(a, 2);
+	printf("distance travelled by projectile is : %f", s, "meters");
+}
+
+int main() 
+{
+	vuat(v,u,a,t,s);
+//	sutat(s,u,a,t);
+	return(0);
+}
