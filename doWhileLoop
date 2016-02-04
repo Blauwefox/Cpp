@@ -1,0 +1,14 @@
+/* Originally scripted on 26JAN2016 to test "do while loop" */
+
+
+#include <stdio.h>
+int main()
+{
+	int x;
+	x = 0;
+	do {
+		printf("Cak cilut at at \n");
+		printf("cak cilut kucing lompat \n");
+	} while ( x !=0);
+	getchar();
+}
